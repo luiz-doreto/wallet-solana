@@ -1,28 +1,28 @@
-import React from "react";
-import { PhantomProvider, AddressType, PhantomSDKConfig } from "@phantom/react-native-sdk";
+import React from 'react';
+import {
+  PhantomProvider,
+  AddressType,
+  PhantomSDKConfig,
+} from '@phantom/react-native-sdk';
 import MyApp from './components/MyApp';
 
 const providerConf: PhantomSDKConfig = {
-  organizationId: "wallet-solana-demo",
-  scheme: "walletsolana",
-  embeddedWalletType: "user-wallet",
+  organizationId: 'wallet-solana-demo',
+  scheme: 'walletsolana',
+  embeddedWalletType: 'user-wallet',
   addressTypes: [AddressType.solana],
-  apiBaseUrl: "https://api.phantom.app/v1/wallets",
-  solanaProvider: "web3js",
-  appName: "Wallet Solana Demo",
+  apiBaseUrl: 'https://api.phantom.app/v1/wallets',
+  solanaProvider: 'web3js',
+  appName: 'Wallet Solana Demo',
   authOptions: {
-    redirectUrl: "walletsolana://auth"
-  }
+    redirectUrl: 'walletsolana://auth',
+  },
 };
 
 export default function App() {
   return (
-    <PhantomProvider 
-      config={providerConf}
-      debugConfig={{ enabled: true }}
-    >
-     <MyApp /> 
+    <PhantomProvider config={providerConf} debugConfig={{ enabled: true }}>
+      <MyApp />
     </PhantomProvider>
   );
-
 }
