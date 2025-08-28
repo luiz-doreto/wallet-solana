@@ -22,7 +22,7 @@ const providerConf: PhantomSDKConfig = {
 export default function App() {
   return (
     <PhantomProvider config={providerConf} debugConfig={{ enabled: true }}>
-      <MyApp />
+      <MyApp /> {/* OR <NoProvider />  only for balance check */}
     </PhantomProvider>
   );
 }

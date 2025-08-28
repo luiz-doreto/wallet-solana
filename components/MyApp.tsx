@@ -5,7 +5,7 @@ import { Linking } from 'react-native';
 
 const MyApp = () => {
   const { connect, isConnecting } = useConnect();
-  const { addresses, isConnected } = useAccounts();
+  const { addresses } = useAccounts();
 
   useEffect(() => {
     const handleDeepLink = (url: string) => {
