@@ -4,7 +4,7 @@ import {
   AddressType,
   PhantomSDKConfig,
 } from '@phantom/react-native-sdk';
-import MyApp from './components/MyApp';
+import HomeScreen from './src/screens/HomeScreen';
 
 const providerConf: PhantomSDKConfig = {
   organizationId: 'wallet-solana-demo',
@@ -22,7 +22,7 @@ const providerConf: PhantomSDKConfig = {
 export default function App() {
   return (
     <PhantomProvider config={providerConf} debugConfig={{ enabled: true }}>
-      <MyApp /> {/* OR <NoProvider />  only for balance check */}
+      <HomeScreen />
     </PhantomProvider>
   );
 }
