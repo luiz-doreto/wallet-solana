@@ -1,97 +1,61 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Wallet Solana Demo (W.I.P)
+A React Native mobile application that demonstrates integration with Phantom Wallet for Solana blockchain interactions. In this specific case the Phantom Wallet SDK for react native was not used.
 
-# Getting Started
+## Features
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+- 🔗 **Phantom Wallet Integration**: Seamless connection to Phantom Wallet without the SDK
+- 🌐 **Multi-Platform Support**: Works on iOS, Android, and Web platforms
+- 🔐 **Secure Authentication**: Google OAuth integration for wallet connection
+- 💰 **Solana Network Support**: Full integration with Solana blockchain
+- 📱 **Deep Link Support**: Handles wallet connections via deep links
 
-## Step 1: Start Metro
+## Tech Stack
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- **React Native** - Cross-platform mobile development
+- **@solana/web3.js** - Solana Web3 JavaScript API
+- **TypeScript** - Type-safe development
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## Prerequisites
 
-```sh
-# Using npm
+Before running this project, make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Phantom Wallet](https://phantom.app/) (mobile app for testing)
+- Make sure to be able to execute the project directly on your phone. This way you can validate the deep links redirection.
+
+## Usage
+
+### Running the App
+
+- **iOS Simulator**: `npm run ios`
+- **Android Emulator**: `npm run android`
+- **Web Browser**: `npm run web`
+
+### Connecting to Phantom Wallet
+
+1. Open the app on your device
+2. Tap the "Conectar" button
+3. Choose Google as your authentication provider
+4. Complete the authentication process
+5. Your wallet address will be displayed once connected
+
+### Development Commands
+
+```bash
+# Start development server
 npm start
 
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
+# Run on specific platform
 npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## Deep Linking
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+The app supports deep linking for wallet connections. The URL scheme `solana://` is used for handling authentication redirects and wallet interactions.
 
-## Step 3: Modify your app
+## Acknowledgments
 
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- [Phantom Wallet](https://phantom.app/) for the connections
+- [Solana Labs](https://solana.com/) for the Web3.js library
