@@ -1,9 +1,4 @@
 {
   "name": "phantomSolanaPoc",
-  "displayName": "phantomSolanaPoc",
-  "plugins": [
-    "expo-secure-store",
-    "expo-web-browser",
-    "expo-router"
-  ]
+  "displayName": "phantomSolanaPoc"
 }

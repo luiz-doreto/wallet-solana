@@ -81,6 +81,7 @@ const usePhantomConnectViewModel = () => {
   };
 
   const handleConnect = async () => {
+    setError('');
     const params = new URLSearchParams({
       dapp_encryption_public_key: bs58.encode(dappKeyPair.publicKey),
       cluster: CLUSTER,
@@ -93,6 +94,7 @@ const usePhantomConnectViewModel = () => {
   }
 
   const handleGetBalance = async () => {
+    setError('');
     if (!phantomWalletPublicKey) {
       return;
     }
@@ -109,6 +111,7 @@ const usePhantomConnectViewModel = () => {
   };
 
   const handleDisconnect = async () => {
+    setError('');
     const payload = {
       session,
     };
@@ -127,6 +130,8 @@ const usePhantomConnectViewModel = () => {
       Linking.openURL(url);
     } catch (err) {
       setError(err as string);
+    } finally {
+      setBalance(null);
     }
   };
 

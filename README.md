@@ -23,6 +23,7 @@ Before running this project, make sure you have the following installed:
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 - [Phantom Wallet](https://phantom.app/) (mobile app for testing)
 - Make sure to be able to execute the project directly on your phone. This way you can validate the deep links redirection.
+- **IMPORTANT**: All the tests and validations were made under `devnet` cluster.
 
 ## Usage
 
@@ -30,7 +31,6 @@ Before running this project, make sure you have the following installed:
 
 - **iOS Simulator**: `npm run ios`
 - **Android Emulator**: `npm run android`
-- **Web Browser**: `npm run web`
 
 ### Connecting to Phantom Wallet
 
