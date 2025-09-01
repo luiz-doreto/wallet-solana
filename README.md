@@ -1,9 +1,9 @@
-# Wallet Solana Demo (W.I.P)
-A React Native mobile application that demonstrates integration with Phantom Wallet for Solana blockchain interactions. In this specific case the Phantom Wallet SDK for react native was not used.
+# Phantom Wallet - Solana Demo (devnet)
+A React Native mobile application that demonstrates integration with Phantom Wallet to connect to the wallet and check the account balance. In this specific case the Phantom Wallet SDK for react native WAS NOT USED.
 
 ## Features
 
-- 🔗 **Phantom Wallet Integration**: Seamless connection to Phantom Wallet without the SDK
+- 🔗 **Phantom Wallet Integration**: Seamless connection to Phantom Wallet WITHOUT the SDK
 - 🌐 **Multi-Platform Support**: Works on iOS, Android, and Web platforms
 - 🔐 **Secure Authentication**: Google OAuth integration for wallet connection
 - 💰 **Solana Network Support**: Full integration with Solana blockchain
@@ -22,7 +22,9 @@ Before running this project, make sure you have the following installed:
 - [Node.js](https://nodejs.org/) (v18 or higher)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 - [Phantom Wallet](https://phantom.app/) (mobile app for testing)
-- Make sure to be able to execute the project directly on your phone. This way you can validate the deep links redirection.
+
+Extra
+- Make sure to be able to execute the project directly on your physical device, this way you can validate the deep links redirection.
 - **IMPORTANT**: All the tests and validations were made under `devnet` cluster.
 
 ## Usage
